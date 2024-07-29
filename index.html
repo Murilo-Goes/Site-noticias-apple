@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <title> Tudo sobre a criação do mundo do iPhone </title>
+  <link rel="stylesheet" href="_css/estilo.css" />
+
+</head>
+
+<script src="_javascript/funcoes.js">
+
+</script>
+
+
+
+
+<body>
+  <div id="interface">
+  <!-- dev afz as vivizoes de interface/relativo dentro do contener/absoluta fora do contener   -->
+  <header id="cabecalho"> <!-- representa um grupo de suporte introdutório ou navegacional. Pode conter alguns elementos de cabeçalho mas também outros elementos como um logo, seções de cabeçalho, formulário de pesquisa -->
+    
+
+    <h1> Mundo do iPhone </h1>
+    <h2> A revolução da Apple está chegando </h2>
+
+
+    <img id="icone" src="_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png" width="200px" />
+
+
+    <!-- JAva - document é o objeta que representa o documento que vc está trabalhando -->
+
+
+
+
+    <nav id="menu"> <!-- menu de navegação -->
+      <h1>Menu Principal</h1>
+      <!--  ol type="1" start="3"lista ordenada , type sáo estilos que vou colocar, ja o start e a ordem s visualizacao-->
+      <ul type="square"> <!-- lista nao ordenada -->
+        <li onmouseover="mudaicone('_imagens/home.png')"
+          onmouseout="mudaicone('_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png')"><a
+            href="index.html"> Home</a></li>
+        <li onmouseover="mudaicone('_imagens/especificacoes.png')"
+          onmouseout="mudaicone('_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png') "><a
+            href="specs.html"> Especificações</a></li>
+        <!--O elemento HTML<ul> (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida-->
+        <li onmouseover="mudaicone('_imagens/fotos.png')"
+          onmouseout="mudaicone('_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png')"><a
+            href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaicone('_imagens/multimidia.png')"
+          onmouseout="mudaicone('_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png')"><a
+            href="multimidia.html"> Multimídia</a></li>
+        <li onmouseover="mudaicone('_imagens/contato.png')"
+          onmouseout="mudaicone('_imagens/png-clipart-iphone-3gs-iphone-x-iphone-gadget-electronics.png')"><a
+            href="fale-conosco.html"> Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <section id="corpo"> <!-- sessao principal do html -->
+    <article id="artigos"> <!-- criacao de um artigo -->
+      <header id="cabecalho-artigos"> <!-- criacao de artigo no cabecalho -->
+        <h2> Tecnologia > Inovações</h2>
+        <h1> Saiba tudo sobre o iPhone</h1>
+        <h2>por Murilo Góes &reg;</h2>
+        <h2>Atualizado em 01/outubro/2024</h2>
+      </header>
+
+      <h2>O que é ?</h2>
+      <!--p style="text-align: justify;"-->
+      <p> <a href="https://www.apple.com/iphone/" target="_blank"> iPhone </a> é uma linha de smartphones desenvolvidos
+        e pela Apple Inc. É o único <!--tag a aloca link, href e a referencia de hiper texto,-->
+        smartphone a operar com o sistema operacional móvel iOS.</p> <!-- target="_blank para náo sair do meu site -->
+      </p>
+      <figure class="imagens-apple-com-legenda">
+        <!--img src="apple-iphone_-768x432.jpg" width="600" height="338˜" /> -->
+        <video id="filme2" width="710" height="220" autoplay loop>
+        <source src="_media/large.mp4" type="video/mp4"/>
+        </video>
+        <!-- <figcaption> Uma nova mandeira de se comunicar com o mundo </figcaption> -->
+      </figure>
+
+      <h2>Data de laçamento</h2>
+      <p </br>Anunciado em 9 de janeiro de 2007, o iPhone foi lançado no dia 29 de junho de 2007 nos EUA, em 9 de
+        novembro
+        de 2007 na Alemanha e no Reino <br />Unido, e em 29 de novembro na França, por Steve Jobs ex-presidente e
+        fundador
+        da marca Apple Inc. Em 2008 foi lançado no mercado<br /> asiático e resto da Europa. Em Portugal, foi
+        inicialmente
+        vendido pela Vodafone. Foi lançado em 11 de julho de 2008, e até janeiro de 2009<br /> foram vendidos quatro
+        milhões de iPhones.[2] Somente durante o fim de semana de lançamento do iPhone 3G, a Apple afirma ter vendido
+        um<br /> milhão de unidades do aparelho.[3] Sendo um dos smartphones mais vendidos do mundo.</p>
+
+
+
+      <h2>Especificações Técnicas</h2>
+      <table id="tabelatabelas"> <!-- criacao de literalmente uma tabela -->
+        <caption> Especificações do iPhone 3GS<span>19 de junho de 2009</span> </caption>
+        <!-- O <span> é uma tag HTML utilizada para agrupar e estilizar partes específicas de um texto dentro de um elemento maior. -->
+
+        <tr>
+          <td class="ce">Tela</td>
+          <td class="cd">Resolução 320 x 480 pixel, 165 ppi</td>
+        </tr> <!-- TR representa a linhda dentro de uma tabela -->
+        <tr>
+          <td class="ce">Camera</td>
+          <td class="cd"> 2MP para fotos</td>
+        </tr> <!-- jja a TD e uma celulam -->
+        <tr>
+          <td class="ce" rowspan="2">Conectividade</td>
+          <td class="cd">Wi-Fi</td>
+        </tr>
+        <tr>
+          <td class="cd">Bluetooth</td>
+        </tr>
+        <tr>
+          <td class="ce">Memória Interna</td>
+          <td class="cd">16GB</td>
+        </tr> <!-- criamos uma classe para identificar a coluna da esquerda e direita-->
+
+      </table>
+      <h2> Como funciona</h2>
+      O Apple iPhone 3G
+      <p> é o mais recente modelo de smartphone da Apple. Lançado em 2008, o iPhone 3G foi o primeiro modelo da série a
+        oferecer acesso à internet de alta velocidade 3G. Além disso, ele possui uma tela sensível ao toque de 3,5
+        polegadas, câmera de 2 megapixels, Bluetooth, GPS, Wi-Fi e capacidade de armazenamento de 8 GB. O iPhone 3G
+        também vem com o sistema operacional iOS, que oferece aos usuários acesso a uma variedade de aplicativos, jogos,
+        músicas e vídeos.</p>
+
+
+      <h2>O que você pode fazer com o Google Glasses</h2>
+      <p>Steve Jobs anunciou o lançamento oficial na WWDC 08, custando nos EUA cerca de 199 dólares (preço do modelo de
+        8 GB) e 299 dólares (preço do modelo 16 GB). No Brasil o iPhone 3G pode variar desde 800 reais até 2100 reais
+        dependendo do plano adquirido na operadora e o modelo do iPhone 3G (8 GB ou 16 GB).</p>
+
+
+      [AQUI ENTRA UM VÍDEO]<br />
+
+
+      Vídeo mais recente
+
+
+    </article>
+  </section>
+
+  <aside id="lateral"> <!-- conteudo lateral -->
+    <h1>Outras Notícias</h1>
+    <h2>Novidades do iPhone </h2>
+    <p>Olha só, a família iPhone 15 é formada por 4 modelos diferentes, tá? Mas mesmo com cada versão contando com
+      recursos próprios, elas ainda têm muitas vantagens em comum.
+
+      Por exemplo, tanto o iPhone 15 básico como o 15 Plus, o 15 Pro e o 15 Pro Max vêm com acesso à internet 5G, a rede
+      com a maior velocidade disponível no Brasil. Aí fica mais fácil navegar nas redes sociais, usar aplicativos de
+      edição, jogar e assistir às séries do momento sem travar nadinha!
+
+      A câmera frontal de 12MP, ou megapixels, também tá presente nas 4 opções. Ela é perfeita pra tirar um monte de
+      selfies com a família e os amigos, gravar vídeos incríveis nas viagens e registrar os melhores momentos com muita
+      qualidade de imagem.</p>
+
+    <p>Por falar nisso, sabe quais são os pontos mais importantes pra conferir antes de decidir qual vai ser o iPhone
+      novo? Eu preparei uma lista com várias diquinhas pra você se dar bem na hora de levar o celular dos sonhos pra
+      casa!
+
+      Tamanho do aparelho: as versões leves e com tela compacta, como o iPhone 15, são boas pra carregar no bolso sem
+      ocupar muito espaço. Já as maiores, como o 15 Pro Max, costumam ter um visor bem grande que é ótimo pra jogar;
+
+      Capacidade interna: os iPhones 15 com 128GB ou 256GB de armazenamento são suficientes pra salvar fotos e arquivos
+      do dia a dia, enquanto as opções com até 1TB são perfeitas pra quem costuma gravar vídeos ou baixar apps pesados
+      no celular;
+
+      Processador e RAM: o processador e a memória RAM formam a duplinha de ouro que cuida do desempenho do smartphone.
+      Versões modernas, como o A16 e o A17, são bem rápidas e fazem toda a diferença pra rodar os apps sem travar;
+
+      Câmera: se você gosta de tirar fotos e gravar vídeos, a resolução da câmera também é muito importante. As lentes
+      frontais dos iPhones 15 são as mesmas, mas as traseiras têm algumas diferenças entre os modelos;
+
+      Visual: ah, vale a pena escolher com carinho a cor do celular, hein? São várias opções nessa linha, como preto,
+      azul-claro, rosa, cinza, verde e até amarelo. Dá pra combinar com uma capinha estilosa e arrasar por aí com esse
+      lançamento da Apple.</p>
+
+  </aside>
+
+  <footer id="rodape">
+
+    <p>.Copyright &copy; 2024 - by Murilo Góes.
+      <br> <a href="https://www.instagram.com/goes_murilo/" target="_blank"> Instagram </a>|
+      <a href="https://www.linkedin.com/in/murilo-góes-b804b1318/" target="_blank"> linkedin </a></br>
+    </p>
+  </footer>
+  </div>
+</body>
+
+</hmtl>

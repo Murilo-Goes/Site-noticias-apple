@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> JS </title>
+    <meta charset="UTF-8">
+    <script>
+                                                                                    // o que esta dentro de () e parametro, entre {}sao codiggos
+         
+             function acenderLampada() {                                            // alert aviso visual 
+              document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";    // document e o objeto no html que estamos trabalhando  mudar imagem na tela
+                                                                                    //getelement significa pegar o elemento por seu ID
+                                                                                    // src é o caminho da imagem que quero mudar
+
+        }
+            function apagarLampada() {
+              document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
+            }
+
+            function quebrarLampada() {
+                document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg";
+            }
+                                                                                    // script e tudo que for JS       
+    </script>                                                                                                 
+    
+       
+</head>
+<body>
+    <h1>
+    Acenda a lâmpada.
+    </h1>
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acenderLampada()" onmouseout="apagarLampada()" onclick="quebrarLampada()"/>          <!-- onclick chama a minha funcao JS, onmousemove ao passa mouse assende -->
+    
+
+</body>
+</html>
+

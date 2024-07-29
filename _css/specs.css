@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+section#conteudo { 
+    width: 000px;
+    margin: auto;
+
+}
+
+iframe#frame-espec { 
+  width: 400px;
+  height: 450px;
+  border: none;
+  overflow: hidden;   /* evitar rolagem em alguns navegadores */
+
+
+
+}
+
+iframe#frame-espec::-webkit-scrollbar {
+    display: none;          /*esconder a barra de rolagem  */
+}

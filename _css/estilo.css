@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+@font-face {                                               /*grupo de fonte do site */
+  font-family: 'Montserrat';                   /* vc cria o nome para fonte */
+  src: url(../_fonts/Roboto-Black.ttf);
+
+}
+
+body {
+  background-color: #0e0b0b;
+  font-family: Arial, sans-serif;
+  color: hsl(0, 15%, 6%);
+  
+
+
+}
+
+/* FORMATACAO DA interface */
+div#interface {                                            /* classe da divizao, aqui a divisao esta no relativo, ou seja no contener,tudo que e alterado, altera tudo */
+  width: 1290px;
+  background-color: #b4b4b4;     
+  margin: 50px auto 40px auto;                             /* cima, direita ,baixo, esquerda, auto deixar navegador decidir */     
+  box-shadow: 0px 0px 20px rgb(240, 239, 237);     
+  padding: 10px 10px 10px 10px;    
+            border-radius: 10px;                           /* arredondar as bordas */
+
+
+
+
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  text-indent: 50px;
+
+}
+
+a {                                                         /* trocar cor de tudo que tiver link */
+  color: #000000;
+  text-decoration: none;                                    /* nao sublinhar */
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+  
+
+
+header#cabecalho img#icone {
+ position:absolute;
+ left: 1200px;
+ top: 50px;
+
+}
+
+header#cabecalho  {
+  border-bottom: 1px #4a2929 solid;                       /* aqui estamos defindo a borda de separacao de cabecarios,customiozacao da borda */
+  padding: 5px 0px;
+  text-align: center;
+  color: hsla(0, 8%, 80%, 0.876);
+  background: url(../_imagens/apple-bloqueou-17-milhao-de-aplicativos-por-problemas-de-privacidade-e-seguranca-no-ano-passado-2-1-1024x576.jpg) 0px 100px;     /* colocar imagens direto no css para ficar como fundo, ../ e para voltar pasta */
+  font-size: large;
+  
+
+}
+header#cabecalho h1 {
+font-size: 30px;
+text-shadow: 1px 1px 2px;
+font-family: 'Montserrat';
+
+}
+header#cabecalho h2 {
+  font-size: 30px;
+  text-shadow: 1px 1px 5px;
+}
+
+
+
+
+
+
+
+/* FORMATACAO Da IMAGEM */
+
+figure.imagens-apple-com-legenda {
+  position: relative;                                      /* posicao letras dentro da imagem, lugar relativo do codigo hmt, no caso a imagem */
+  border: 50px groove rgb(212, 217, 229);                /* 5px valor numero da em pixel, solid estilo da borda, cor da boda    */
+  border-width: 5px 6px;                                   /* dimensao da borda */
+  box-shadow: 1px 1px 10px rgb(235, 33, 33);             /* sobrmas da borda */
+  
+}
+
+figure.imagens-apple-com-legenda img {                      /* deixar todas as fotos img com tamanho indicado */
+  width: 550px;                                             /* largura da imagem */
+  height: 250px;                                            /* altura da imagem */
+
+
+}
+
+igure.imagens-apple-com-legenda figcaption {                /* deixar imagens enquadradas dentro da borda , lembrando que ele é um objeto filho do figure, o primeiro la de cima*/
+  position: absolute;                                        /* enquadra dentro da borda eliminando comentarios */
+  top: 0px;                                                  /* posicao */
+  background-color:#1c151570;
+  width: 100%;
+  height: 100%;
+  padding: 10px;                                              /* espaço dentro da legenda */
+  box-sizing: border-box;                                     /* crriar um box dentro da borda */
+  opacity: 0;                                                 /* deixar letras invisives */
+  transition: opacity 1s;                                                  
+  
+
+
+}
+
+figure.imagens-apple-com-legenda:hover figcaption {            /* criamos uma linha de comando para mexer so com a sobre tela da imagem */
+opacity: 1;
+
+  
+}
+/* formatacao do MENU */
+
+nav#menu {
+  display: block;                                                 /* criacao de blocos que podem flutuar pela tela */
+  
+
+}
+
+
+nav#menu ul {                                                     /* nav e menu , a # e para chamar o id , menu e o que estabeleci no index, irei mexer 
+                                                                  tudo que tiver no ul */
+
+   list-style: none;                                                 /* matar os marcadores */
+   text-transform: uppercase;                                        /* deixar letras em maiusculo */
+   position: absolute;                                             /*  para poder passar em cima dos documentos */
+  top: -20px;                                                        /* sobe */
+  left: 650px; 
+  
+                                                      /*  lados*/
+  
+
+  }
+
+nav#menu li {
+   display: inline-block;                                           /* deixar todos na mesma linha */
+   background-color: beige;
+   padding: 10px;                                                    /* criar espaco dentrp das caixas */
+   margin: 2px;                                                      /* criar espaco entre eles */
+   border-radius: 5px;                                               /* arredondar as bordas */
+   box-shadow: 1px 1px 10px rgba(46, 228, 13, 0.952);
+   transition:background-color 2s;
+   
+
+}
+nav#menu li:hover {                                                /* criar efeitos de transicao em tudo que for li */
+  background-color: #606060;
+
+  
+
+
+}
+
+nav#menu h1 {
+  display: none; ;                                                   /* sumir com menu principal */
+  
+}
+nav#menu a {                                                         /* mexer em tudo que tiver link , ou seja, os menus */
+  color : rgb(3, 18, 10);
+  text-decoration: none;                                             /* retirar dublinhado */
+
+}
+
+nav#menu a:hover {                                                   /* agora estamos mexendo nas transicoes de tudo que tiver link */
+  color: rgb(255, 255, 255);
+
+  
+}
+
+section#corpo { 
+display: block;
+width:800px ;
+float: left;
+padding: 30px;
+border-right: 1px solid #4a2929;                                /*criacao de borda na vertical */
+
+}
+article#artigos h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #0a0606d3;
+  background-color: #9b9696;
+  padding: 0px  0px 0px 10px;
+  
+  
+
+}
+header#cabecalho-artigos h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0a0606d3;
+  text-shadow: 1px 1px 5px;
+  
+
+}
+
+header#cabecalho-artigos h2 {
+  font-size: 10pt;
+  background-color:#fff7f700 ;
+  color: #0a0606d3;
+  text-shadow: 1px 1px 5px;
+  display: block;
+    
+  
+
+}
+
+header#cabecalho-artigos h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0a0606d3;
+  text-shadow: 1px 1px 5px;
+  
+
+}
+
+
+
+table#tabelatabelas {                                             /* mexer na formatacao da tabela */
+border: 1px solid #000000;
+border-spacing: 0px;                                              /* remover espaco entre as celulas */
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+table#tabelatabelas td {
+border: 1px solid #000000;
+background-color: rgba(83, 96, 89, 0.209);
+padding: 10px;                                                     /*espaco interneo */
+text-align: justify; 
+}
+
+table#tabelatabelas td.ce {
+color :#fffcfc;
+background-color: #331414;
+<!-- vertical-align top -->
+font-weight: bold;                                                 /* negrito */
+
+
+}
+
+table#tabelatabelas td.cd {
+
+}
+
+table#tabelatabelas caption {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #4a2929;
+  color: #fffcfc;
+}
+
+table#tabelatabelas caption span {
+  font-display: block;                                                /* desconecta do texto, fica flutuante dentro do conterner */
+  float: right;
+  font-size: 8px;                                                     /* tamanho do texto, fica flutuante dentro*/
+  margin-top: 10px;
+}
+
+aside#lateral {
+  display: block;
+  width: 400px;
+  float: right;                                                 /*  como deixamos ele como bloco, podemos usar o flutuar para usar esquerda ou direita */
+  background-color: #9b969695;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px ;
+}
+
+aside#lateral h1 {
+
+ font-size: 35px;
+  font-weight: bold;
+  color: #0a0606d3;
+  text-shadow: 1px 1px 5px;
+  background-color: #a39d9d;
+  padding: 0px  0px 0px 10px;
+  margin-bottom: 10px;
+  
+
+}
+
+aside#lateral h2 {
+
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  
+ }
+
+ aside#lateral p {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  float: left;
+  padding: 10px ;                                                  /* criar espaco entre borda e texto */
+  
+  
+  
+  
+ }
+
+footer#rodape {
+clear:both;
+border-top: 1px solid #4a2929;
+}
+footer#rodape p {
+text-align: center; 
+
+}
+
+
+}
+
+
+
+
+
+
+
