@@ -9,6 +9,9 @@ Funcionalidades Principais
 1.	Página Inicial:
 	•	Destaques das notícias mais recentes e populares.
 
+![GravaodeTela2024-07-29s12 04 13-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3610b88e-9642-4f1c-8a49-bfcc6b0020d5)
+
+
 
 
 3.	Menus Interativos:
