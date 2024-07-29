@@ -16,27 +16,31 @@ Funcionalidades Principais
 
 3.	Menus Interativos:
 	•	Navegação fácil com menus suspensos e botões de acesso rápido.
+
 ![GravaodeTela2024-07-29s12 16 16-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d5422058-5347-4ee5-bcf9-7452d340e7b1)
 
 
 5.	Seção de Fotos:
 	•	Galeria de fotos de produtos e eventos da Apple.
 	•	Slideshows e visualizações ampliadas das imagens.
+
 ![GravaodeTela2024-07-29s12 10 17-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/8520a587-0e55-460d-864b-c01c55e111e6)
+
+
 ![GravaodeTela2024-07-29s12 14 03-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/cd5e9a56-fd27-4ca8-a191-42098563d09c)
 
 
 
-6.	Página de Registro:
+7.	Página de Registro:
 	•	Formulário de cadastro para novos usuários.
 	•	Opção de login para usuários registrados.
 	•	Validação de campos com JavaScript.
 	
-7.	Página de Contato:
+8.	Página de Contato:
 	•	Formulário de contato com campos para nome, email, assunto e mensagem.
 	•	Integração com serviços de email para envio de mensagens.
 
-8.	Seção de Notícias:
+9.	Seção de Notícias:
 	•	Listagem de artigos de notícias com títulos, resumos e links para as páginas completas.
 
 Tecnologias Utilizadas
