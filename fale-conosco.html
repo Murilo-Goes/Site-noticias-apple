@@ -30,7 +30,8 @@
                     <li onmouseover="mudaicone('_imagens/multimidia.png')"
                         onmouseout="mudaicone('_imagens/contato.png')"><a href="multimidia.html"> Multimídia</a></li>
                     <li onmouseover="mudaicone('_imagens/contato.png')" onmouseout="mudaicone('_imagens/contato.png')">
-                        <a href="fale-conosco.html"> Fale conosco</a></li>
+                        <a href="fale-conosco.html"> Fale conosco</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -46,39 +47,63 @@
                     <h2>Atualizado em 01/outubro/2024</h2>
 
 
-                    <form> <!-- formulario -->
-                        <fieldset id="cliente">  <!-- conjunto de campos -->
+                    <form method="post" id="Tcontato" action="murilogoes25@gmail.com">
+                        <!-- formulario   get coloca tudo no link, post nao, mais segurp-->
+                        <fieldset id="cliente"> <!-- conjunto de campos -->
                             <legend> Identificação do Usuário </legend>
-                            <p>Nome:<input type="text" name="tname" id="cname" size="20" maxlength="15" placeholder="Nome completo" >  </p>    <!-- input  e a colocacao de um objeto em formulario , size tamanho do tanto de carac , maxlend e tanto de caract-->
-                            <p>Senha:<input type="password" name="tsenha" id="csenha" size="20" maxlength="15" placeholder="Nao utiliza 123 como senha"> </p> 
-                            <p>E-mail:<input type="email" name="tmail" id="cmail" size="30" maxlength="40"  </p>
+                            <p><label for="tname"> Nome: </label><input type="text" name="tname" id="cname" size="20"
+                                    maxlength="15" placeholder="Nome completo"> </p>
+                            <!-- input  e a colocacao de um objeto em formulario , size tamanho do tanto de carac , maxlend e tanto de caract-->
+                            <p>Senha:<input type="password" name="tsenha" id="csenha" size="20" maxlength="15"
+                                    placeholder="Nao utiliza 123 como senha"> </p>
+                            <p>E-mail:<input type="email" name="tmail" id="cmail" size="30" maxlength="40" </p>
+
                             <fieldset id="sexo">
-                            <legend>Sexo:</legend>
-                            - <label for=" cmasculino">Masculino </label> <input type="radio" name="tmasculino" id="cmasculino">
-                            -<label for="cmasculino"> Feminino </label> <input type="radio" name="tmasculino" id="cmasculino">
-                            <!-- a criação do labal é para que ao aperta em masculino ele identifique a class e deixe selecionar sem precisar ir no redondo
+                                <legend>Sexo:</legend>
+                                - <label for=" cmasculino">Masculino </label> <input type="radio" name="tmasculino"
+                                    id="cmasculino"></br>
+                                -<label for="tfeminino"> Feminino </label> <input type="radio" name="tmasculino"
+                                    id="tfeminino">
+                                <!-- a criação do labal etiqueta é para que ao aperta em masculino ele identifique a class e deixe selecionar sem precisar ir no redondo
                              label serve para identificar o objeto relativo a ele-->
 
+                            </fieldset>
+
+
+                            <p>Data de Nascimento: <input type="date" name="pdata" id="cdata">
                         </fieldset>
-                            <p>Data de Nascimento:</p> <input type="date">
+                        </p>
 
                         </fieldset>
 
                         <fieldset id="endereco">
                             <legend> Endereço do Usuário </legend>
-                            Logradouro:
-                            Número:
-                            Estado:
-                            Cidade:
+                            <p>Logradouro: <input type="text" name="logra" id="clogra"> </p>
+                            <p>Número: <input type="number" name="nume" id="tnumero"> </p>
+                            <p>Estado:<select name="esta" id="testa"> </p>
+                                <option value="Leao">fortaleza</option>
+                                <option>Itapipoca</option> <!-- selecte gera opcao -->
+                            </select>
+                           
+                                <p>Cidade:<input type="text" name="cidade" id="tcidade" list="cidade"> </p>
+                                <datalist id="cidade">
+                                    <option value="Fortaleza"></option>
+                                    <option value="Itapipoca"></option>
+                                    <option value="Sobral"></option>
+                                    <option value="Cascavel"></option>
+                                    <option value="Cafarnaum"></option>
+                                    <option value="Jaguaruana"></option>
+                                    <option value="Cascavel"></option>
+                                </datalist>
                         </fieldset>
 
                         <fieldset id="alerta">
                             <legend> Mensagem do Usuário </legend>
-                            Grau de Urgência:
-                            Mensagem:
+                            <p><input type="range" name="ur" min="0" max="10" step="1"> Grau de Urgência: </p>
+                            <p> <textarea name="t" id="s"> Mensagem </textarea>  </p>
                         </fieldset>
 
-                        <fieldset id="compra"> 
+                        <fieldset id="compra">
                             <legend> Quero um Google Glass </legend>
                             Gostaria de adquirir um Google Glass quando disponível
                             Cor:
