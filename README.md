@@ -30,17 +30,23 @@ Funcionalidades Principais
 ![GravaodeTela2024-07-29s12 14 03-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/cd5e9a56-fd27-4ca8-a191-42098563d09c)
 
 
+![GravaodeTela2024-07-31s19 39 24-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/73dbeead-5295-40c6-9f32-a8600af856f8)
+
+
 
 7.	Página de Registro:
 	•	Formulário de cadastro para novos usuários.
 	•	Opção de login para usuários registrados.
 	•	Validação de campos com JavaScript.
+
+![Captura de Tela 2024-07-31 às 19 40 04](https://github.com/user-attachments/assets/7c4d636d-b122-4e72-bdda-1687cc0e172f)
+
 	
-8.	Página de Contato:
+9.	Página de Contato:
 	•	Formulário de contato com campos para nome, email, assunto e mensagem.
 	•	Integração com serviços de email para envio de mensagens.
 
-9.	Seção de Notícias:
+10.	Seção de Notícias:
 	•	Listagem de artigos de notícias com títulos, resumos e links para as páginas completas.
 
 Tecnologias Utilizadas
